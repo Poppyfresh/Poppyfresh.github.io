@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en" dir="ltr">
+  <meta charset="utf-8">
+  <title>JS practice 1</title>
+  <script type="text/javascript">
+    /*this declares a variable*/
+    var x = 3;
+    /*This declares a function*/
+    function generateFunny() {
+      var funnyPhrases = ['HOG RIDA', 'IWMGSP', 'Thats cool and all, but we did not ask',
+      'Sorry, my f**** to give went MIA like your father', 'Pablo', 'AUUGHHHHHHHHHH']
+      var funnyWords = document.getElementById('funnyWords');
+      funnyWords.innerHTML = funnyPhrases[rollDie() - 1];
+    }
+    //rollDie will give you a number between 1 and 6
+    function rollDie() {
+      var newNumber = Math.random()
+      newNumber = newNumber * 6
+      newNumber = Math.ceil(newNumber)
+      return newNumber
+    }
+    //Puts a random number in the die dieBox
+    function getDieRoll() {
+      var dieBox = document.getElementById('dieBox')
+      dieBox.innerHTML = rollDie();
+    }
+    //Test using lists
+    var itemList = ["Diamond Sword", "Diamond Pickaxe", "Enchanted Golden Apple", "Magenta wool"];
+    console.log(itemList[0]);
+    console.log(itemList[1]);
+    console.log(itemList[2]);
+    console.log(itemList[3]);
+ // The code above is zombie code, we can save it for later if we ever want to use it.
+  </script>
+</head>
+
+<body>
+  <h1>Welcome</h1>
+  <h2 id="funnyWords" onclick="generateFunny()">Funny word here...</h2>
+  <div id="dieBox" onclick="getDieRoll()">
+    Click to roll the Die..
+  </div>
+</body>
+
+</html>
