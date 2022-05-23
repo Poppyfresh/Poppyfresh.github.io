@@ -1,86 +1,58 @@
 body {
-  height: 100%;
-  background-color: white;
+  background: #1c7eed;
+  width: 1000px;
+  margin: auto;
+  border-radius: auto
 }
 
-.thumbsBox {
-  width: 50%;
-  height: 50%;
-  border: 10px solid black;
+.space {
+  border: 10px solid #ffffff;
+  margin: 5px;
+  padding: 3px;
+}
+
+.blogBox {
+  border: 3px solid #0a0909;
+  padding: 5px;
+  text-shadow: 1px 1px #0a0909;
+  background: #1c7eed;
+  border-spacing: 10px;
+  background: #ffffff
+}
+
+.linkBox {
+  border: 3px solid #0a0909;
+  padding: 5px;
+  vertical-align: middle;
   text-align: center;
-  line-height: 350px;
-  font-size: 100px;
-  color: black;
+  text-shadow: 1px 1px #0a0909;
+  background: #ffffff
 }
 
-.ptop {
-  Position: absolute;
-  top: 0px;
+#content {
+  border: 10px solid #0a0909;
+  padding: 20px;
+  background: #ffffff
 }
 
-.pbot {
-  Position: absolute;
-  bottom: 0px;
-}
-
-.pleft {
-  Position: absolute;
-  left: 0px;
-}
-
-.pright {
-  Position: absolute;
-  right: 0px;
-}
-
-#tup:hover {
-  background-color: #bfb;
-}
-
-#tdown:hover {
-  background-color: #fbb;
-}
-
-#twiggle:hover {
-  background-color: #bff;
-}
-
-#tremove:hover {
-  background-color: #ffb;
-}
-
-#tup {
-  background-color: #00cc00;
-}
-
-#tdown {
-  background-color: #cc0000;
-}
-
-#twiggle {
-  background-color: #00ffff;
-}
-
-#tremove {
-  background-color: #ffff00;
-}
 #headerBox {
-  color: green;
-  font-size: 50px;
-}
-p {
-  color: brown;
-  font-size: 15px;
-}
-.paraBox {
-  border: 1px solid black;
-}
-#navBox {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap:
+  border: 5px solid #0a0909;
+  padding: 5px;
+  background: #ffffff
 }
 
-.navButtons {
-  Display: block;
+h1 {
+  vertical-align: middle;
+  text-align: center;
+  background: #ffffff
+}
+
+p {
+  font-size: 13px color: #000000
+}
+
+#linkMenu {
+  border: 5px solid #0a0909;
+  padding: 5px;
+  background: #ffffff
 }
