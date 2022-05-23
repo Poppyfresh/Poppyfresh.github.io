@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hamburger Menu test</title>
+  <style media="screen">
+
+  </style>
+  <script type="text/javascript">
+    function openNav() {
+      console.log('I open the menu');
+      var menuBox = document.getElementById('hamburgerMenu')
+      menuBox.style.display = 'Block';
+    }
+    function closeNav() {
+      console.log('I open the close menu');
+      var menuBox = document.getElementById('hamburgerMenu')
+      menuBox.style.display = 'none';
+    }
+  </script>
+</head>
+
+<body>
+  <div id="hamburgerIcon" onclick="openNav()">
+    ☰
+  </div>
+  <div id="hamburgerMenu">
+    <a href="index.html">Home</a>
+  </div>
+  <div id="closeMenu" onclick="closeNav()">
+    X
+  </div>
+  <p>I undoubtedly believe that hamburgers and cheeseburgers work well with fries.</p>
+
+</body>
+
+</html>
