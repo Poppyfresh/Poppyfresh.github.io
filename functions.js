@@ -1,3 +1,6 @@
+function hamburger(h) {
+  h.classList.toggle("change")
+}
 var open = false
 
 
@@ -15,4 +18,6 @@ function openNav() {
     menuBox.style.display = 'Block';
     open = true
   }
+  var h = document.getElementById('hamburger')
+  h.classList.toggle("change")
 }
